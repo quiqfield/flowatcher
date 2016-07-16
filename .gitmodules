@@ -1,0 +1,6 @@
+[submodule "deps/dpdk"]
+	path = deps/dpdk
+	url = http://dpdk.org/git/dpdk
+[submodule "deps/libwebsockets"]
+	path = deps/libwebsockets
+	url = https://github.com/warmcat/libwebsockets.git
