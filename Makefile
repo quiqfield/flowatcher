@@ -23,10 +23,12 @@ CFLAGS += -O3
 CFLAGS += $(WERROR_FLAGS)
 CFLAGS += -Wno-unused-parameter
 CFLAGS += -Wno-unused-but-set-variable
+CFLAGS += -Wno-strict-prototypes
+CFLAGS += -Wno-old-style-definition
 
 # libwebsockets
-CFLAGS += -I./deps/libwebsockets/target/include
-LDLIBS += -L./deps/libwebsockets/target/lib -lwebsockets
+CFLAGS += -I$(PWD)/deps/libwebsockets/target/include
+LDLIBS += -L$(PWD)/deps/libwebsockets/target/lib -lwebsockets
 
 include $(RTE_SDK)/mk/rte.extapp.mk
 

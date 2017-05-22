@@ -28,13 +28,15 @@ Note: The scripts work on x86_64 Linux.
 - make
 - cmake (2.8 or greater)
 - openssl (for building libwebsockets)
+- zlib-devel
+- openssl-devel
 - kernel headers (for the DPDK igb-uio driver)
 
 
 for Debian/Ubuntu:
 
 ```
-# apt-get install gcc make cmake openssl linux-headers-$(uname -r)
+# apt-get install gcc make cmake openssl zlib1g-dev libssl-dev linux-headers-$(uname -r)
 ```
 
 ## Run Flowatcher App
